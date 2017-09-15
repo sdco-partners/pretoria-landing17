@@ -4,7 +4,6 @@ process:
   markdown: true
   twig: true
 metadata:
-  refresh: 30
   authors: 'SDCO Partners'
   keywords: 'Beer, Brewers, Georgia, Farmers'
   description: 'Farmers and Brewers working together to brew beer from Georgia soil'
@@ -21,16 +20,16 @@ metadata:
 			</div>
 			<div class="this-middle">
 				<div class="brewers">
-					{{ file_get_contents('assets/svg/svg-brewers.svg') }}
+					{{ file_get_contents('user/themes/blastoid/assets/svg/svg-brewers.svg') }}
 				</div>
 				<div class="farmers">
-					{{ file_get_contents('assets/svg/svg-farmers.svg') }}
+					{{ file_get_contents('user/themes/blastoid/assets/svg/svg-farmers.svg') }}
 				</div>		
 			</div>
 			<div class="this-right">
 				<h3>to produce slow beer with ingredients sewn in the Georgia soil</h3>
 				<div class="imprint-logo">
-					{{ file_get_contents('assets/svg/svg-pretoria.svg') }}
+					{{ file_get_contents('user/themes/blastoid/assets/svg/svg-pretoria.svg') }}
 				</div>
 			</div>
 		</div>
@@ -49,8 +48,19 @@ metadata:
 {# ==== SECTION: NEWSLETTER ==== #}
 <section class="newsletter">
 	<h3 class="tagline">Want to know more? Sign up for our newsletter.</h3>
-	<form>
-		<input type="email" name="email" placeholder="type in your email address" class="f-email">
-		<input type="submit"class="f-submit">
+	<form action="//pretoriafields.us14.list-manage.com/subscribe/post-json?u=897debc7b273cedcf6b179d76&amp;id=a7e47986e6&amp;c=?" 
+	  method="get" id="mc-embedded-subscribe-form" 
+	  name="mc-embedded-subscribe-form" class="validate" 
+	  target="_blank" novalidate>
+		<input type="email" name="EMAIL" placeholder="type in your email address" class="f-email email" id="mce-EMAIL" required>
+		<div id="mce-responses" class="clear">
+	    <div class="response" id="mce-error-response" style="display:none"></div>
+	    <div class="response" id="mce-success-response" style="display:none"></div>
+	  </div>
+	  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+		<div style="position: absolute; left: -5000px;" aria-hidden="true">
+			<input type="text" name="b_897debc7b273cedcf6b179d76_a7e47986e6" tabindex="-1" value="">
+		</div>
+		<input type="submit" class="f-submit button" id="mc-embedded-subscribe" value="Subscribe">
 	</form>
 </section>
