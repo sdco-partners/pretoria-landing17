@@ -81,6 +81,10 @@ To update plugins and themes:
 $ bin/gpm update
 ```
 
+To compile SASS:
+```
+$ scsss --watch scss:compiled
+```
 
 # Contributing
 We appreciate any contribution to Grav, whether it is related to bugs, grammar, or simply a suggestion or improvement! Please refer to the [Contributing guide](CONTRIBUTING.md) for more guidance on this topic.
