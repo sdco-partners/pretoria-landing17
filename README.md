@@ -83,7 +83,7 @@ $ bin/gpm update
 
 To compile SASS:
 ```
-$ scsss --watch scss:compiled
+$ scss --watch scss:compiled
 ```
 
 # Contributing
